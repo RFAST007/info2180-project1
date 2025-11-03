@@ -1,26 +1,54 @@
 /* Add your CSS to this file */
 
+
+body{
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    border: 6px solid #fbfbfd; 
+     
+    margin: 8px; 
+    padding: 0px;
+    font-size: 18px;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; 
+}
+
 /* Header Styles */
 
 header .container{
+    background-color: white;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     & h1{
+        font-size: 18px;
         display: flex;
         justify-content: left;
+
     }
     & ul{
+        font-size: 18px;
         display: flex;
         list-style: none;
+        text-decoration: none;
         gap: 20px;
         justify-content: right;
+        color: #6b7280;
     }
+    
+    & ul:hover, & ul:focus{
+        color: #5A67D8;
+        text-decoration: none;
+        
+    }
+
+        
 }
 
 /* Overview Hero Styles */
 .overview-hero .container{
+    background-color: #E2E8F0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,6 +81,16 @@ header .container{
 /* learn-about section styles */
 .learn-about .container{
     padding: 20px;
+
+    & h2{
+        font-size: 24px;
+        color:#48BB78;
+    }
+
+    & h3{
+    font-size: 21px;
+    color: #48BB78;
+    }
     
     & .cards{
         display: grid;
@@ -71,6 +109,8 @@ header .container{
 
 /* testing */
 .testing .container{
+    background-color: #4A5568;
+    color: white;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -103,12 +143,23 @@ header .container{
     & h2{
         display: flex;
         justify-content: left;
+        color: #5A67D8;
+    }
+
+    & p a{
+        color: #5A67D8;
+    }
+
+    & .article-body h3{
+        font-size: 18px;;
     }
 }
 
 
 /*newsletter*/
 .newsletter .container{
+    background-color: #48BB78;
+    color: white;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -118,6 +169,7 @@ header .container{
         display: flex;
         gap: 20px;
         & .btn{
+            background-color: #5A67D8;
             float: right;
         }
     }
@@ -126,6 +178,8 @@ header .container{
 
 /* footer */
 footer .container{
+    background-color: #4A5568;
+    color: white;
     padding: 20px;
     display: flex;
     justify-content: space-between;
